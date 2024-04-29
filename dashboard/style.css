@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Add box-sizing to include padding and borders in the element's total width and height */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow container to wrap to next line if necessary */
+}
+
+.sidebar {
+
+    min-height: 100vh;
+    width: 17%;
+    background-image: linear-gradient(to bottom, var(--primary), #796cca);
+    display: flex;
+    flex-direction: column;
+    transition: width 1s ease;
+}
+.visible{
+    display: block !important;
+    width: 10rem !important;
+}
+.panel{
+    position: sticky;
+    top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logo {
+    padding: 20px;
+    font: 700 1rem sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.panel hr{
+    border: 10px solid transparent;
+}
+
+.active {
+    padding: 3px;
+    background-color: var(--primary);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    cursor: pointer;
+    margin-bottom: 10px !important;
+}
+
+.active>a>span {
+    font: 600 0.9rem sans-serif;
+    color: white;
+}
+.active>a>img{
+    opacity: 1;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.nav-item:hover .nav-link img {
+    opacity: 1;
+    /* Change the opacity of the image when hovering over the nav item */
+}
+
+.nav-item:hover .nav-link span {
+    color: white;
+    /* Change the color of the span when hovering over the nav item */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-link>img {
+    margin: 10px;
+}
+
+.nav-link>span {
+    color: var(--grey);
+    font: 100 0.9rem sans-serif;
+}
+
+.sidebar-heading {
+    color: rgba(255, 255, 255, 0.500);
+    font: 700 0.7rem sans-serif;
+    cursor: auto !important;
+}
+
+.img {
+    opacity: 0.5;
+}
+
+/* .arrow-btn {
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.arrow-btn:hover img{
+    opacity: 1;
+}
+.arrow-btn img {
+    border-radius: 10px;
+    width: 50px;
+    height: auto;
+} */
+
+
+
+
+
+.main {
+    flex: 1;
+    background-color: rgba(234, 243, 252, 0.397);
+    overflow: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    height: 90px;
+}
+
+.menu{
+    margin-left: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.menu>img{
+    width: 40px;
+    display: none;
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+
+#balance {
+    height: 2vmax;
+    width: 9vmax;
+    background-color: var(--secondary);
+    border-radius: 7px;
+    color: white;
+    border: none;
+    padding: 7px;
+    font: 700 1vmax sans-serif;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.accountbtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.messagebtn,
+.notificationbtn {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    filter: brightness(80%);
+}
+.verticalline {
+    width: 1px;
+    height: 50px;
+    background-color: #b7b9ccba;
+    margin: 20px;
+}
+
+#profilepic {
+    margin: 10px;
+}
+
+#name {
+    color: #8b8c94;
+    margin-right: 40px;
+    font: 100 0.8rem sans-serif;
+}
+
+.dropdown {
+    position:relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content>hr{
+    border-top: 1px solid var(--grey);
+    width: 100%;
+}
+.dropdown-content div {
+    color: var(--grey);
+    padding: 12px 50px;
+    text-decoration: none;
+    font: 100 0.7rem sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+#dropPackage div:last-child img{
+    width: 30px;
+}
+#dropPackage div:first-child img{
+    width: 30px;
+}
+
+.dropdown-content div:first-child{
+    border-radius: 10px 10px 0px 0px;
+}
+.dropdown-content div:last-child{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-content div:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.cards {
+    margin: 30px;
+    min-height: 100vh;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+
+.greet {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 1.5rem !important;
+    width: 100%;
+    overflow: hidden;
+}
+
+.greet>h2 {
+    font: 700 1.5rem sans-serif;
+    color: var(--grey);
+}
+
+
+
+
+
+.insidecards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.check,
+.card {
+    height: 10rem;
+    width: calc(25% - 1.125rem);
+    /* Distribute the cards evenly in 4 columns (25% - margin) */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    border-radius: 7px;
+}
+
+.card{
+    font: 400 1rem sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: var(--grey);
+    cursor: pointer;
+}
+.card img{
+    width: 80px;
+    height: 80px;
+}
+.card:hover img{
+    filter: invert(43%) sepia(14%) saturate(2229%) hue-rotate(208deg) brightness(98%) contrast(110%);
+}
+.card:hover span{
+    color: var(--primary);
+}
+.card:hover {
+    transform: scale(1.05); /* Increase the size of the card by 10% */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+
+.check {
+    height: 6rem;
+    font: 700 0.7rem sans-serif;
+    color: #8b8c94d2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.innercard{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.innercard span{
+    margin-bottom: 5px;
+}
+
+.ao{
+    border-left: 0.25rem solid #F6C13C;
+}
+.co{
+    border-left: 0.25rem solid var(--primary);
+}
+.wb{
+    border-left: 0.25rem solid var(--secondary);
+}
+.ls{
+    border-left: 0.25rem solid var(--secondary);
+}
+
+.ao>div>h1{
+    color:#F6C13C;
+}
+.co>div>h1{
+    color: var(--primary);
+}
+.wb>div>h1{
+    color: var(--secondary);
+}
+.ls>div>h1{
+    color: var(--secondary);
+}
+.imgc{
+    border-radius: 20px;
+    width: 45px;
+    height: 45px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        /* Adjust main content width to take full width */
+    }
+    .menu>img{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        justify-content: flex-end;
+        /* Center header items for smaller screens */
+    }
+
+    .cards {
+        justify-content: center;
+        /* Center cards horizontally for smaller screens */
+    }
+
+    .check,
+    .card {
+        width: 100%;
+        /* Set cards to full width for smaller screens */
+    }
+    #name,.balancebtn{
+        display: none;
+    }
+    .accountbtn{
+        margin-right: 15px;
+    }
+    #accountDropdown{
+        transform: translateX(-50%);
+        
+    }
+    #accountDropdown div span{
+        display: none;
+    }
+
+}
+
+:root {
+    --primary: #7160e0;
+    --secondary: #1DC98A;
+    --grey: #A0ACB7;
+}

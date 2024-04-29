@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+        <ul class="panel">
+            <a href="/dashboard" id="logo">Blogger</a>
+
+            <hr>
+            <li class="nav-item active" onclick="navigateTo('/dashboard')" >
+                <a href="/dashboard" class="nav-link ">
+                    <img src="../icons/icons8-dashboard-24.png" class="img" alt="">
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <hr>
+            <div class="sidebar-heading nav-item">MANAGE</div>
+            <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                <a href="/explore%20search" class="nav-link">
+                    <img src="../icons/icons8-search-24.png" class="img" alt="">
+                    <span>Explore Sites</span>
+                </a>
+            </li>
+            <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                <a href="/explore%20search" class="nav-link">
+                    <img src="../icons/icons8-bag-24.png" class="img" alt="">
+                    <span>Orders</span>
+                </a>
+            </li>
+            <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                <a href="/explore%20search" class="nav-link">
+                    <img src="../icons/icons8-bag-24.png" class="img" alt="">
+                    <span>Content Orders</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <div class="dropdown">
+                <a href="#" class="nav-link">
+                    <img src="../icons/icons8-carton-24.png" class="img" alt="">
+                    <span>Packages</span>
+                </a>
+                <div class="dropdown-content" id="dropPackage">
+                    <div onclick="navigateTo('/explore%20search')">
+                        <img src="../icons/icons8-bag-48.png" alt="">
+                        <span>Buy Packages</span>
+                    </div>
+                    <div onclick="navigateTo('/explore%20search')">
+                        <img src="../icons/icons8-packages-53.png" alt="">
+                        <span>View Orders</span>
+                    </div>
+                </div>
+            </div>
+            </li>
+            <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                <a href="/explore%20search" class="nav-link">
+                    <img src="../icons/icons8-branch-24.png" class="img" alt="">
+                    <span>Campaigns</span>
+                </a>
+            </li>
+            <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                <a href="/explore%20search" class="nav-link">
+                    <img src="../icons/icons8-wallet-24.png" class="img" alt="">
+                    <span>Wallet</span>
+                </a>
+            </li>
+            <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                <a href="/explore%20search" class="nav-link">
+                    <img src="../icons/icons8-check-book-24.png" class="img" alt="">
+                    <span>Withdrawls</span>
+                </a>
+            </li>
+            <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                <a href="/explore%20search" class="nav-link">
+                    <img src="../icons/icons8-invoice-24.png" class="img" alt="">
+                    <span>Invoices</span>
+                </a>
+            </li>
+            <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                <a href="/explore%20search" class="nav-link">
+                    <img src="../icons/icons8-ticket-24.png" class="img" alt="">
+                    <span>Subscription</span>
+                </a>
+            </li>
+            <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                <a href="/explore%20search" class="nav-link">
+                    <img src="../icons/icons8-administrator-male-24.png" class="img" alt="">
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                <a href="/explore%20search" class="nav-link">
+                    <img src="../icons/icons8-phone-24.png" class="img" alt="">
+                    <span>Contact Us</span>
+                </a>
+            </li>
+            <!-- <li class="nav-item">
+                <div class="arrow-btn" id="toggle-sidebar">
+                    <img src="./icons8-less-than-96.png" class="img" alt="Toggle Sidebar">
+                </div>
+            </li> -->
+
+        </ul>
+        </div>
+
+
+
+
+        <div class="main">
+            <header>
+                <div class="menu">
+                    <img src="../icons/icons8-menu-96.png" alt="">
+                </div>
+            <nav class="header">
+                <div class="balancebtn"><button id="balance">
+                    <span>Balance: ₹</span>
+                    <h4>0.00</h4>
+                </button></div>
+                <div class="messagebtn"><img src="../icons/icons8-message-24.png" class="icon" alt=""></div>
+                <div class="notificationbtn"><img src="../icons/icons8-notification-24.png" class="icon" alt=""></div>
+                <div class="verticalline"></div>
+                <div class="accountbtn dropdown">
+                    <img id="profilepic" src="" alt="dp">
+                    <span id="name">Aditya Bhadouria</span>
+                    <div class="dropdown-content" id="accountDropdown">
+                        <div onclick="navigateTo('/explore%20search')">
+                            <img src="../icons/icons8-admin-24.png" alt="">
+                            <span>Profile</span>
+                        </div>
+                        <hr>
+                        <div onclick="navigateTo('/explore%20search')">
+                            <img src="../icons/icons8-logout-24.png" alt="">
+                            <span>Logout</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+            <div class="cards">
+                <div class="greet">
+                    <h2>Hello Aditya Bhadouria!</h2>
+                </div>
+                <div class="insidecards">
+                    <div class="check ao">
+                        <div class="innercard">
+                            <span>ACTIVE ORDERS</span>
+                            <h1>0</h1>
+                        </div>
+                        <img src="../icons/icons8-bag-96 (1).png" class="imgc" alt="">
+                    </div>
+                    <div class="check co">
+                        <div class="innercard">
+                            <span>COMPLETED ORDERS</span>
+                            <h1>0</h1>
+                        </div>
+                        <img src="../icons/icons8-bag-96 (2).png" class="imgc" alt="">
+                    </div>
+                    <div class="check wb">
+                        
+                        <div class="innercard">
+                            <span>WALLET BALANCE</span>
+                            <h1>₹0.00</h1>
+                        </div>
+                        <img src="../icons/icons8-dollar-96.png" class="imgc"  alt="">
+                    </div>
+                    <div class="check ls">
+                        <div class="innercard">
+                            <span>LIFETIME SPENDING</span>
+                            <h1>₹0.00</h1>
+                        </div>
+                        <img src="../icons/icons8-dollar-96.png" class="imgc"  alt="">
+                    </div>
+
+                    <div class="card" onclick="navigateTo('/explore%20search')">
+                        <img src="../icons/icons8-search-150.png" alt="">
+                        <span>Place Order</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('/explore%20search')">
+                        <img src="../icons/icons8-task-64.png" alt="">
+                        <span>See My Orders</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('/explore%20search')">
+                        <img src="../icons/icons8-webpage-64.png" alt="">
+                        <span>Buy Content</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('/explore%20search')">
+                        <img src="../icons/icons8-eye-64.png" alt="">
+                        <span>View Content Orders</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('/explore%20search')">
+                        <img src="../icons/icons8-carton-96.png" alt="">
+                        <span>Buy Package</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('/explore%20search')">
+                        <img src="../icons/icons8-packages-53.png" alt="">
+                        <span>View Package Orders</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('/explore%20search')">
+                        <img src="../icons/icons8-bill-100.png" alt="">
+                        <span>View All Transaction</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('/explore%20search')">
+                        <img src="../icons/icons8-admin-96.png" alt="">
+                        <span>Edit Profile</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('/explore%20search')">
+                        <img src="../icons/icons8-message-100.png" alt="">
+                        <span>Talk To SEO Expert</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('/explore%20search')">
+                        <img src="../icons/icons8-idea-100.png" alt="">
+                        <span>Knowledge Base</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

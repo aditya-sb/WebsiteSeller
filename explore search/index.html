@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Search</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul class="panel">
+                <a href="/dashboard" id="logo">Blogger</a>
+
+                <hr>
+                <li class="nav-item" onclick="navigateTo('/dashboard')">
+                    <a href="/dashboard" class="nav-link ">
+                        <img src="../icons/icons8-dashboard-24.png" class="img" alt="">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <hr>
+                <div class="sidebar-heading nav-item">MANAGE</div>
+                <li class="nav-item active" onclick="navigateTo('/explore%20search')">
+                    <a href="/explore%20search" class="nav-link">
+                        <img src="../icons/icons8-search-24.png" class="img" alt="">
+                        <span>Explore Sites</span>
+                    </a>
+                </li>
+                <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                    <a href="/explore%20search" class="nav-link">
+                        <img src="../icons/icons8-bag-24.png" class="img" alt="">
+                        <span>Orders</span>
+                    </a>
+                </li>
+                <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                    <a href="/explore%20search" class="nav-link">
+                        <img src="../icons/icons8-bag-24.png" class="img" alt="">
+                        <span>Content Orders</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a href="#" class="nav-link">
+                            <img src="../icons/icons8-carton-24.png" class="img" alt="">
+                            <span>Packages</span>
+                        </a>
+                        <div class="dropdown-content" id="dropPackage">
+                            <div onclick="navigateTo('/explore%20search')">
+                                <img src="../icons/icons8-bag-48.png" alt="">
+                                <span>Buy Packages</span>
+                            </div>
+                            <div onclick="navigateTo('/explore%20search')">
+                                <img src="../icons/icons8-packages-53.png" alt="">
+                                <span>View Orders</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                    <a href="/explore%20search" class="nav-link">
+                        <img src="../icons/icons8-branch-24.png" class="img" alt="">
+                        <span>Campaigns</span>
+                    </a>
+                </li>
+                <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                    <a href="/explore%20search" class="nav-link">
+                        <img src="../icons/icons8-wallet-24.png" class="img" alt="">
+                        <span>Wallet</span>
+                    </a>
+                </li>
+                <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                    <a href="/explore%20search" class="nav-link">
+                        <img src="../icons/icons8-check-book-24.png" class="img" alt="">
+                        <span>Withdrawls</span>
+                    </a>
+                </li>
+                <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                    <a href="/explore%20search" class="nav-link">
+                        <img src="../icons/icons8-invoice-24.png" class="img" alt="">
+                        <span>Invoices</span>
+                    </a>
+                </li>
+                <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                    <a href="/explore%20search" class="nav-link">
+                        <img src="../icons/icons8-ticket-24.png" class="img" alt="">
+                        <span>Subscription</span>
+                    </a>
+                </li>
+                <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                    <a href="/explore%20search" class="nav-link">
+                        <img src="../icons/icons8-administrator-male-24.png" class="img" alt="">
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item" onclick="navigateTo('/explore%20search')">
+                    <a href="/explore%20search" class="nav-link">
+                        <img src="../icons/icons8-phone-24.png" class="img" alt="">
+                        <span>Contact Us</span>
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+                <div class="arrow-btn" id="toggle-sidebar">
+                    <img src="./icons8-less-than-96.png" class="img" alt="Toggle Sidebar">
+                </div>
+            </li> -->
+
+            </ul>
+        </div>
+
+
+
+
+        <div class="main">
+            <header>
+                <div class="menu">
+                    <img src="../icons/icons8-menu-96.png" alt="">
+                </div>
+                <nav class="header">
+                    <div class="balancebtn"><button id="balance">
+                            <span>Balance: ₹</span>
+                            <h4>0.00</h4>
+                        </button></div>
+                    <div class="messagebtn"><img src="../icons/icons8-message-24.png" class="icon" alt=""></div>
+                    <div class="notificationbtn"><img src="../icons/icons8-notification-24.png" class="icon" alt="">
+                    </div>
+                    <div class="verticalline"></div>
+                    <div class="accountbtn dropdown">
+                        <img id="profilepic" src="" alt="dp">
+                        <span id="name">Aditya Bhadouria</span>
+                        <div class="dropdown-content" id="accountDropdown">
+                            <div onclick="navigateTo('/explore%20search')">
+                                <img src="../icons/icons8-admin-24.png" alt="">
+                                <span>Profile</span>
+                            </div>
+                            <hr>
+                            <div onclick="navigateTo('/explore%20search')">
+                                <img src="../icons/icons8-logout-24.png" alt="">
+                                <span>Logout</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="cards">
+                <div class="lowBalWarning">
+                    <a href=""><span>⚠ Your wallet balance is low. </span><span>Click here to add funds</span></a>
+                </div>
+                <div class="greet">
+                    <h2>Get On BloggerOutreach And Buy 5-7 Blog Post Links Every Week For At Least 3 Months To Rank In
+                        The Top Ten</h2>
+                </div>
+                <div class="form">
+                <div id="searchbar">
+                    <input type="text" name="name" id="searchField" placeholder="Search sites">
+                    <button type="submit" id="searchbtn">Search</button>
+                </div>
+                <select name="selected" id="selected">
+                    <option value="relevence">Relevence</option>
+                    <option value="latest">Latest</option>
+                    <option value="oldest">Oldest</option>
+                    <option value="htol">Price: High to Low</option>
+                    <option value="ltoh">Price: Low to High</option>
+                </select>
+                <div class="innerFilter">
+                    <div class="filters">
+                        <img src="../icons/icons8-filter-50.png" alt="">
+                        <span>Filters</span>
+                    </div>
+                    <div class="toggle">
+                        <img src="../icons/icons8-grid-64.png" alt="">
+                    </div>
+                    <div class="toggle">
+                        <img src="../icons/icons8-list-64.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="tags">
+                        <span>
+                            <img src="../icons/icons8-check-30.png" alt="">
+                            <span>Guest Post</span>
+                        </span>
+                        <span>
+                            <img src="../icons/icons8-check-30.png" alt="">
+                            <span>Link Insertion</span>
+                        </span>
+                    </div>
+
+                    <div class="website">
+                        <a href="darkhorsed.netlify.com">darkhorse.com</a>
+                    </div>
+                    <div class="website-name">
+                        <h5>darkhorse</h5>
+                    </div>
+
+                    <div class="categories">
+                        <span>Arts & Entertainment</span>
+                        <span>Business & Entrepreneurship</span>
+                        <span>Lifestyle & Fashion</span>
+                    </div>
+
+                    <div class="info">
+                        <img src="../icons/icons8-info-30 (1).png" alt="">
+                        <span>View Site Info</span>
+                    </div>
+                </div>
+                
+                <div class="seo-metrices">
+                    <div class="metric da">
+                        <img src="../icons/icons8-crown-24.png" alt="">
+                        <span class="metric-name">Domain Authority</span>
+                        <span class="metric-value">45</span>
+                    </div>
+                    <div class="metric ss">
+                        <img src="../icons/icons8-question-mark-24.png" alt="">
+                        <span class="metric-name">Spam Score</span>
+                        <spa class="metric-value"n>2</span>
+                    </div>
+                    <div class="metric dr">
+                        <img src="../icons/icons8-star-24.png" alt="">
+                        <span class="metric-name">Domain Rating</span>
+                        <span class="metric-value">62</span>
+                    </div>
+                    <div class="metric l">
+                        <img src="../icons/icons8-language-24.png" alt="">
+                        <span class="metric-name">Language</span>
+                        <span  class="metric-value">English</span>
+                    </div>
+                    <div class="metric">
+                        <img src="../icons/icons8-human-geography-32.png" alt="">
+                        <span class="metric-name">Organic Traffic</span>
+                        <span class="metric-value">641</span>
+                    </div>
+                    <div class="metric">
+                        <img src="../icons/icons8-link-50.png" alt="">
+                        <span class="metric-name">Links</span>
+                        <span  class="metric-value">Dofollow</span>
+                    </div>
+                </div>
+
+                <div class="country">
+                    <div>
+                        <img src="../icons/icons8-earth-30.png" alt="">
+                        <span>Countries</span>
+                    </div>
+                    <span>India</span>
+                </div>
+
+                <div class="price">
+                    <h2>$ 400</h2>
+                    <button>Buy Now</button>
+                    <a href="">Add to Campaigns</a>
+                </div>
+            </div>.
+
+            <div class="pagination">
+                <button id="previousPage"><</button>
+                <div id="pageNumbers"></div>
+                <button id="nextPage">></button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
