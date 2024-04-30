@@ -14,4 +14,8 @@ function navigateTo(url) {
 }
 
 
-
+document.addEventListener("DOMContentLoaded", function() {
+  // Remove the overlay once the page is fully loaded
+  const overlay = document.getElementById('overlay');
+  overlay.style.display = 'none';
+});

@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <div class="overlay" id="overlay">
+        <div class="loading-spinner"></div>
+    </div>
     <div class="container">
         <div class="sidebar">
             <ul class="panel">
@@ -121,7 +124,7 @@
                 </div>
                 <nav class="header">
                     <div class="balancebtn"><button id="balance">
-                            <span>Balance: ₹</span>
+                            <span>Balance: $ </span>
                             <h4>0.00</h4>
                         </button></div>
                     <div class="messagebtn"><img src="../icons/icons8-message-24.png" class="icon" alt=""></div>
@@ -171,10 +174,10 @@
                         <img src="../icons/icons8-filter-50.png" alt="">
                         <span>Filters</span>
                     </div>
-                    <div class="toggle">
+                    <div class="toggle grid">
                         <img src="../icons/icons8-grid-64.png" alt="">
                     </div>
-                    <div class="toggle">
+                    <div class="toggle table">
                         <img src="../icons/icons8-list-64.png" alt="">
                     </div>
                 </div>
@@ -259,7 +262,23 @@
                     <button>Buy Now</button>
                     <a href="">Add to Campaigns</a>
                 </div>
-            </div>.
+            </div>
+            <div class="tableDisplay">
+            <table width="100%">
+                <tr>
+                    <th width="25%">Domain</th>
+                    <th width="5%">DA</th>
+                    <th width="5%">DR</th>
+                    <th width="10%">Traffic</th>
+                    <th cwidth="5%">SC</th>
+                    <th width="10%">Links</th>
+                    <th width="10%">GP</th>
+                    <th width="10%">LI</th>
+                    <th width="10%">GN</th>
+                    <th width="10%">Action</th>
+                </tr>
+            </table>
+        </div>
 
             <div class="pagination">
                 <button id="previousPage"><</button>
