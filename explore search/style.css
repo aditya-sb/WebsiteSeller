@@ -681,6 +681,45 @@ input::placeholder {
 }
 
 
+.tablepagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+.tablepagination>button {
+    padding: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    border: none;
+    font: 400 1rem sans-serif;
+    cursor: pointer;
+}
+.tablepagination>div>button{
+    padding: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    border: none;
+    font: 400 1rem sans-serif;
+    cursor: pointer;
+}
+#tpreviousPage{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#tnextPage{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#tpreviousPage:hover{
+    background-color: var(--grey);
+}
+#tnextPage:hover{
+    background-color: var(--grey);
+}
+.tablepagination>div>button:hover{
+    filter: brightness(80%);
+}
+
+
 .tableDisplay{
     display: flex;
     background-color: white;
@@ -691,13 +730,67 @@ input::placeholder {
     margin-bottom: 1rem;
     overflow: hidden;
 }
-table>tr:first-child{
-    border: 2px solid black;
-}
+
 table tr th{
     font: 700 1rem sans-serif;
     color: var(--grey);
     text-align: left;
+    padding: 0.75rem;
+}
+.tablehead{
+    padding: 0.75rem;
+    border: 2px solid black;
+}
+
+.tabledata span,.tabledata a{
+    display: block;
+}
+.tabledata>span{
+    font: 700 1.1rem sans-serif;
+    color: var(--primary);
+}
+.tabledata>a{
+    font: 100 0.7rem sans-serif;
+}
+.tabledata>a:hover{
+    text-decoration: underline;
+}
+.tablerow td{
+    text-align :left;
+    padding: .75rem;
+    
+}
+
+.box{
+    font: 400 0.7rem sans-serif;
+    padding: 3px 6px;
+    border-radius: 5px;
+    background-color: var(--lightcheck);
+    color: var(--check);
+    width: fit-content;
+    text-align: center;
+}
+.linkbox>button,.action>button{
+    background-color: white;
+    border-color: var(--primary);
+    color: var(--primary);
+    text-align: center;
+    padding: 10px;
+    font: 400 0.9rem sans-serif;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.linkbox>button:hover,.action>button:hover{
+    background-color: var(--primary);
+    color: white;
+}
+.gn{
+    font: 400 0.9rem sans-serif;
+    color: var(--primary);
+    cursor: pointer;
+}
+.gn:hover{
+    text-decoration: underline;
 }
 
 
